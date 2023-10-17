@@ -22,6 +22,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+.clear-fix{
+    clear: both;
+}
 .button{
   font-size: 13px;
   font-weight: 700;
@@ -36,6 +39,9 @@ body{
     background: #fff;
     color: $light-text-color;
     border-radius: 53px;
+    &.square{
+        border-radius: 8px;
+    }
     &:hover{
         background: rgba(0, 161, 255, 1);
         color: $white-text-color;

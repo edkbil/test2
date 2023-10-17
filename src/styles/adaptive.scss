@@ -1,0 +1,142 @@
+@mixin small-size {
+    font-size: 35px;
+    line-height: 41px;
+}
+@media (min-width: 1950px) {
+    main{
+        &.normal{
+            img{
+                width: 45%;
+            }
+        }
+    }
+
+}
+@media (min-width: 1201px) {
+    .info{
+      position: relative;
+      top: 130px;
+    }
+  }
+@media (min-width: 801px) {
+    .why-us{
+        .big-list{
+            width: 760px;
+            margin: auto;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .wrapper{
+        width: 100%;
+    }
+    main{
+        padding: 80px 20px 80px 20px;
+        .info{
+          width: 45%;
+        }
+        img{
+          width: 50%;
+          height: auto;
+        }
+      }
+      .list{
+        margin-top: 0px;
+        padding-top: 60px;
+        &.normal{
+            margin-top: 0px;
+        }
+    }
+}
+@media (max-width: 1070px) {
+    .list{
+        .items{
+            flex-wrap: wrap;
+            .item{
+                width: 49%;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    body{
+        br{
+            display: none;
+        }
+    }
+    button{
+        font-size: 18px;
+    }
+    .why-us{
+        .big-list{
+            .item{
+                display: block;
+                text-align: center;
+                .img{
+                    margin: auto;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 820px) {
+    main{
+        padding: 40px 0px 40px 20px;
+        .info{
+            width: 100%;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            h1{
+                @include small-size;
+            }
+        }
+        &.normal{
+            img{
+                position: static;
+                float: right;
+                width: 300px;
+            }
+        }
+    }
+    .list{
+        &.normal{
+            .items{
+                display: block;
+                .item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .why-us{
+        padding-top: 40px;
+        .big-list{
+            &.normal{
+                padding: 45px 20px 0 20px;
+                .item {
+                    .text {
+                        h3{
+                            font-size: 25px;
+                            line-height: 28px;
+                        }
+                    }
+                    .img{
+                        width: 100%
+                    }
+                }
+            }
+        }
+        h2{
+            @include small-size;
+        }
+        
+    }
+    footer{
+        padding: 31px 0 31px 0;
+        h2{
+            font-size: 35px;
+        }
+    }
+        
+}
