@@ -4,12 +4,6 @@
 
 ```
     npm install
-    npm run build
-```
-
-or
-
-```
-   npm install
-   npm run start
+    npm run dev for dev mode
+    npm run build for building (sourse in dist filder)
 ```

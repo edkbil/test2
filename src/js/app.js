@@ -1,5 +1,3 @@
-import "./styles/all.scss";
-
 const body = document.querySelector("main");
 const list = document.querySelector(".list");
 const bigList = document.querySelector(".big-list");
