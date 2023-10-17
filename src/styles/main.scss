@@ -1,3 +1,41 @@
-body{
-  background: #fff;
+main{
+  background-color: #f8fafb;
+  position: relative;
+  padding: 181px 0 460px 0;
+  transition: 0.3s;
+
+  opacity: 0;
+  zoom: 0.3;
+  &.normal{
+    opacity: 1;
+    zoom: 1;
+    img{
+      right: 0px;
+    }
+  }
+  .info{
+    width: 516px;
+    h1{
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 56px;
+      color: $dark-text-color;
+      padding: 15px 0 15px 0;
+    }
+    h2{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $light-text-color;
+      padding-bottom: 15px;
+    }
+  }
+  img{
+    transition: 0.3s;
+    position: absolute;
+    right: -300px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+  }
 }

@@ -1,6 +1,10 @@
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/all.scss ***!
   \**************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/all.scss (1) ***!
+  \******************************************************************************************************************/
 html,
 body,
 div,
@@ -83,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
 }
 
 *,
@@ -92,6 +95,167 @@ video {
   box-sizing: border-box;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 1160px;
+  margin: auto;
+}
+
+.flex-list {
+  display: flex;
+}
+
+.button {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+.button.white {
   background: #fff;
+  color: #8f9bb3;
+  border-radius: 53px;
+}
+.button.white:hover {
+  background: #00a1ff;
+  color: #fff;
+}
+.button.blue {
+  background: #00a1ff;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.button.blue:hover {
+  border: 1px solid #00a1ff;
+  background: #fff;
+  color: #00a1ff;
+}
+
+main {
+  background-color: #f8fafb;
+  position: relative;
+  padding: 181px 0 460px 0;
+  transition: 0.3s;
+  opacity: 0;
+  zoom: 0.3;
+}
+main.normal {
+  opacity: 1;
+  zoom: 1;
+}
+main.normal img {
+  right: 0px;
+}
+main .info {
+  width: 516px;
+}
+main .info h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #252e37;
+  padding: 15px 0 15px 0;
+}
+main .info h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8f9bb3;
+  padding-bottom: 15px;
+}
+main img {
+  transition: 0.3s;
+  position: absolute;
+  right: -300px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+
+.list {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.list.normal .items {
+  margin-top: -120px;
+  justify-content: space-between;
+}
+.list.normal .items .item .icon {
+  width: 98px;
+  height: 98px;
+}
+.list.normal .items .item .icon svg {
+  top: 0px;
+  transform: rotate(0);
+  opacity: 1;
+}
+.list .items {
+  justify-content: flex-start;
+  transition: 0.3s;
+}
+.list .items .item {
+  background: #fff;
+  width: 260px;
+  height: 309px;
+  padding: 20px 10px 20px 10px;
+  border-radius: 6px;
+  gap: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+}
+.list .items .item .icon {
+  width: 48px;
+  height: 48px;
+  padding: 20px;
+  border-radius: 77px;
+  margin: auto;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.list .items .item .icon.yellow {
+  background: #fef6ed;
+}
+.list .items .item .icon.blue {
+  background: #ecf5ff;
+}
+.list .items .item .icon.violet {
+  background: #eeeefb;
+}
+.list .items .item .icon.green {
+  background: #ebfbf5;
+}
+.list .items .item .icon svg {
+  position: relative;
+  top: 30px;
+  transition: 0.3s;
+  transform: rotate(-0.25turn);
+  opacity: 0;
+}
+.list .items .item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #252e37;
+  padding: 22px 0 15px 0;
+}
+.list .items .item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8f9bb3;
 }
