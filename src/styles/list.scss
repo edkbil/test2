@@ -7,10 +7,9 @@
 .list{
     position: relative;
     margin-top: 100px;
-    padding-bottom: 100px;
     &.normal{
+        margin-top: -120px;
         .items{
-            margin-top: -120px;
             justify-content: space-between;
             .item{
                 .icon{

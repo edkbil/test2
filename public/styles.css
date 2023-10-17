@@ -112,6 +112,12 @@ body {
   display: flex;
 }
 
+.do-fl-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   font-size: 13px;
   font-weight: 700;
@@ -187,10 +193,11 @@ main img {
 .list {
   position: relative;
   margin-top: 100px;
-  padding-bottom: 100px;
+}
+.list.normal {
+  margin-top: -120px;
 }
 .list.normal .items {
-  margin-top: -120px;
   justify-content: space-between;
 }
 .list.normal .items .item .icon {
@@ -258,4 +265,71 @@ main img {
   font-weight: 400;
   line-height: 24px;
   color: #8f9bb3;
+}
+
+.why-us {
+  padding-top: 120px;
+}
+.why-us h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+  color: #252e37;
+}
+.why-us .big-list {
+  padding-top: 85px;
+  width: 760px;
+  margin: auto;
+}
+.why-us .big-list.normal .item {
+  justify-content: space-between;
+}
+.why-us .big-list.normal .item .img {
+  width: 298px;
+  height: 299px;
+}
+.why-us .big-list .item {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 85px;
+}
+.why-us .big-list .item .text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #252e37;
+}
+.why-us .big-list .item .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8f9bb3;
+  padding: 20px 0 20px 0;
+}
+.why-us .big-list .item .img {
+  border-radius: 40px;
+  width: 198px;
+  height: 199px;
+  padding: 55px, 45px 55px 45px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.why-us .big-list .item .img.yellow {
+  background: #fadbb5;
+}
+.why-us .big-list .item .img.blue {
+  background: #8ec7fb;
+}
+.why-us .big-list .item .img.green {
+  background: #b1f1d7;
+}
+.why-us .big-list .item .img.violet {
+  background: #c5c5f1;
+}
+.why-us .big-list .item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.why-us .big-list .item:last-child {
+  padding-bottom: 0px;
 }
